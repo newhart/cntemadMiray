@@ -19,3 +19,7 @@
 	align-items: center;
 	/*justify-content: space-between;*/
 }
+
+.col-log-12{
+	border:2px solid red;
+}
