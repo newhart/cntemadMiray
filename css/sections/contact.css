@@ -1,0 +1,90 @@
+.form-2{
+    /*flexbox stuff */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /*text styles */
+    text-align: center;
+}
+.list-unstyled{
+    /* list style */
+    list-style-type: none;
+
+
+}
+.turquoise{
+    /* color */
+    color: var(--blue);
+}
+.list-unstyled .fas{
+    /* about fas fa-map-marker-alt & fas fa-envelope & fas fa-phone */
+    color: var(--blue);
+    padding-right: 10px;
+
+}
+.map-responsive{
+    /* background */
+    background: url(https://goo.gl/maps/iwx55J27ygcgQRcv7);
+    /*margins and padding */
+    padding: 20px;
+    margin: 10px;
+}
+.form-group {
+    /* about the formulary */
+    /* text align */
+    text-align: center;
+    /*padding and margins */
+    padding: auto;
+    margin: 5px;
+    /*border */
+    border-radius: 100px;
+
+}
+.form-group .form-control-input{
+    /*positioning and sizing */
+    width: 270px;
+    height: 30px;
+    /*padding and margins */
+    padding: 15px;
+    margin: 10px;
+}
+.form-group .form-control-textarea{
+    /*positioning and sizing */
+    width: 270px;
+    height: 100px;
+    /* margins and padding */
+    padding : 20px;
+    margin: 10px;
+}
+.form-group .form-control-submit-button {
+
+       /*Positioning and sizing */
+       display: block;
+       width: 300px;
+  
+       /*Padding and margins */
+       padding: 1em;
+       margin-top: 10px;
+       margin-left: auto;
+       margin-right: auto;
+       margin-bottom: 10px;
+        
+       /* Text styles */
+       color: white;
+       text-decoration: none;
+       font-size: 1.5 em;
+  
+       /*border styles */
+       border: 1px ;
+       border-bottom: 0px;
+       border-top: 0px;
+       border-left: 0px;
+       border-right: 0px;
+       border-radius: 30px;
+       
+       /* color */
+       background-color: var(--blue);
+  
+  
+  }
+  
