@@ -24,6 +24,7 @@
     <link rel="stylesheet" href="./css/sections/contact.css" />
     <link rel="stylesheet" href="./css/sections/footer.css" />
     <link rel="stylesheet" href="./css/sections/navigation.css" />
+    <link rel="stylesheet" href="./css/sections/team.css">
     <link rel="stylesheet" href="./css/fontawesome-all.css">
     <link href="css/styles.css" rel="stylesheet" />
     <link href="css/swiper.css" rel="stylesheet" />
@@ -31,11 +32,7 @@
     <!-- Favicon  -->
     <link rel="icon" href="images/favicon.png" />
 
-    <!-- script js -->
-    <script src="js/swiper.min.js"></script>
-    <!-- Swiper for image and text sliders -->
-    <script src="js/scripts.js"></script>
-    <!-- Custom scripts -->
+    
   </head>
   <body data-spy="scroll" data-target=".fixed-top">
     <!-- Preloader -->
@@ -131,7 +128,7 @@
             <div class="col-lg-6">
               <div class="image-container">
                 <img
-                  class="img-fluid"
+                  class="img-fluid1"
                   src="images/header-teamwork.svg"
                   alt="alternative"
                 />
@@ -201,7 +198,7 @@
                 <p><span class="badge badge-primary">Club</span>:de danse</p>
                 <p><span class="badge badge-primary">Club</span>:d'echecs</p>
                 <p>
-                  <span class="badge badge-primary">Club</span>:d'infromatique
+                  <span class="badge badge-primary">Club</span>:d'informatique
                 </p>
                 <p><span class="badge badge-primary">Club</span>:d'anglais</p>
               </div>
@@ -248,7 +245,7 @@
           <div class="col-lg-6">
             <div class="image-container">
               <img
-                class="img-fluid"
+                class="img-fluid1"
                 src="images/testimonials-2-men-talking.svg"
                 alt="alternative"
               />
@@ -350,9 +347,8 @@
     <!-- end of testimonials -->
 
     <!-- TEAM (CHRISTIANO ATAO SLIDE KOA ITO) -->
-    <div id="team" class="basic-4">
-      <div class="container">
-        <div class="row">
+    <div id="team" class="swiper-container team-card">
+       <div class="row">
           <div class="col-lg-12">
             <h2>A-propos du membres</h2>
             <p class="p-heading p-large">Les membres du bureaux</p>
@@ -360,10 +356,9 @@
           <!-- end of col -->
         </div>
         <!-- end of row -->
-        <div class="row">
-          <div class="col-lg-12">
+        <div class="swiper-wrapper">
             <!-- Team Member -->
-            <div class="team-member">
+            <div class="swiper-slide">
               <div class="image-wrapper">
                 <img
                   class="img-fluid"
@@ -394,7 +389,7 @@
             <!-- end of team member -->
 
             <!-- Team Member -->
-            <div class="team-member">
+            <div class="swiper-slide">
               <div class="image-wrapper">
                 <img
                   class="img-fluid"
@@ -425,7 +420,7 @@
             <!-- end of team member -->
 
             <!-- Team Member -->
-            <div class="team-member">
+            <div class="swiper-slide">
               <div class="image-wrapper">
                 <img
                   class="img-fluid"
@@ -456,7 +451,7 @@
             <!-- end of team member -->
 
             <!-- Team Member -->
-            <div class="team-member">
+            <div class="swiper-slide">
               <div class="image-wrapper">
                 <img
                   class="img-fluid"
@@ -487,7 +482,7 @@
             <!-- end of team member -->
 
             <!-- Team Member -->
-            <div class="team-member">
+            <div class="swiper-slide">
               <div class="image-wrapper">
                 <img
                   class="img-fluid"
@@ -520,7 +515,7 @@
             <!-- end of team member -->
 
             <!-- Team Member -->
-            <div class="team-member">
+            <div class="swiper-slide">
               <div class="image-wrapper">
                 <img
                   class="img-fluid"
@@ -551,7 +546,7 @@
             <!-- end of team member -->
 
             <!-- Team Member -->
-            <div class="team-member">
+            <div class="swiper-slide">
               <div class="image-wrapper">
                 <img
                   class="img-fluid"
@@ -582,7 +577,7 @@
             <!-- end of team member -->
 
             <!-- Team Member -->
-            <div class="team-member">
+            <div class="swiper-slide">
               <div class="image-wrapper">
                 <img
                   class="img-fluid"
@@ -615,7 +610,7 @@
             <!-- end of team member -->
 
             <!-- Team Member -->
-            <div class="team-member">
+            <div class="swiper-slide">
               <div class="image-wrapper">
                 <img
                   class="img-fluid"
@@ -648,7 +643,7 @@
             <!-- end of team member -->
 
             <!-- Team Member -->
-            <div class="team-member">
+            <div class="swiper-slide">
               <div class="image-wrapper">
                 <img
                   class="img-fluid"
@@ -679,14 +674,12 @@
             </div>
             <!-- end of team-member -->
             <!-- end of team member -->
-          </div>
-          <!-- end of col -->
-        </div>
-        <!-- end of row -->
       </div>
-      <!-- end of container -->
+      <div class="swiper-button-prev"></div>
+      <div class="swiper-button-next"></div>
+      <div class="swiper-pagination"></div>
     </div>
-    <!-- end of basic-4 -->
+    <!-- end of container -->
     <!-- end of about -->
 
     <!-- Contact (MBOLA TSY MISY MANAO) -->
@@ -850,4 +843,9 @@
     <!-- end of copyright -->
     <!-- end of copyright -->
   </body>
+  <!-- script js -->
+  <script src="js/swiper.min.js"></script>
+  <!-- Swiper for image and text sliders -->
+  <script src="js/script.js"></script>
+  <!-- Custom scripts -->
 </html>
