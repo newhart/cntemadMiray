@@ -19,7 +19,11 @@
 .list-unstyled .fas{
     /* about fas fa-map-marker-alt & fas fa-envelope & fas fa-phone */
     color: var(--blue);
-    padding-right: 10px;
+    padding-center: 5px;
+    padding-right: 5px;
+    margin-left: 10px;
+    margin-right: 10px;
+    
 
 }
 .map-responsive{
