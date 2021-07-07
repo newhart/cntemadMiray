@@ -1,0 +1,16 @@
+.swiper-slide{
+    margin: 0 auto;
+    text-align: center;
+    line-height: 50px;
+
+
+}
+.img-fluid{
+    border-radius: 50%;
+    width: 55%;
+    height: 40%;
+    border: 2px #439DB7 double;
+}
+.team-card{
+    height: 540px;
+}
