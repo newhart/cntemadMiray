@@ -1,0 +1,25 @@
+:root{
+	--blue: #439DB7;
+	--yellow: #FED336;
+	--orange: #F47542;
+	--green: #2D8E8B;
+   --black: #393939;
+}
+
+#activity .container{
+	/*border:2px solid black;*/
+	display: flex;
+	flex-direction: column;
+}
+
+#activity .container .row{
+	/*border:3px solid orange;*/
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	/*justify-content: space-between;*/
+}
+
+.col-log-12{
+	border:2px solid red;
+}
