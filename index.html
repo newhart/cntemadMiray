@@ -259,16 +259,11 @@
 
             <!-- Card Slider -->
             <div class="slider-container">
-              <div class="swiper-container card-slider">
-                <div class="swiper-wrapper">
+              <div class="container card-slider">
+                <div class="wrapper" >
                   <!-- Slide -->
-                  <div class="swiper-slide">
+                  <div class="slide">
                     <div class="card">
-                      <img
-                        class="card-image"
-                        src="images/testimonial-1.svg"
-                        alt="alternative"
-                      />
                       <div class="card-body">
                         <p class="testimonial-text">
                           Constituer le mouvement unitaire représentatif des
@@ -279,11 +274,11 @@
                       </div>
                     </div>
                   </div>
-                  <!-- end of swiper-slide -->
-                  <!-- end of slide -->
-
-                  <!-- Slide -->
-                  <div class="swiper-slide">
+                  <button class="show" id="btnshow">Voir plus->></button>
+                  <button class="show" id="btnhide"><<-Voir moins</button>
+                  <!-- modal hidden -->
+                  <div class="modal-hidden" id="hidden">
+                  <div class="slide">
                     <div class="card">
                       <img
                         class="card-image"
@@ -301,11 +296,11 @@
                       </div>
                     </div>
                   </div>
-                  <!-- end of swiper-slide -->
+                  <!-- end of slide -->
                   <!-- end of slide -->
 
                   <!-- Slide -->
-                  <div class="swiper-slide">
+                  <div class="slide">
                     <div class="card">
                       <img
                         class="card-image"
@@ -323,17 +318,13 @@
                       </div>
                     </div>
                   </div>
-                  <!-- end of swiper-slide -->
+                  </div>
+                  <!-- end of slide -->
                   <!-- end of slide -->
                 </div>
-                <!-- end of swiper-wrapper -->
-
-                <!-- Add Arrows -->
-                <div class="swiper-button-next"></div>
-                <div class="swiper-button-prev"></div>
-                <!-- end of add arrows -->
+                <!-- end of wrapper -->
               </div>
-              <!-- end of swiper-container -->
+              <!-- end of container -->
             </div>
             <!-- end of slider-container -->
             <!-- end of card slider -->

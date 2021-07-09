@@ -1,0 +1,16 @@
+.show{
+    width: 35%;
+    margin-left: 30%;
+    background: var(--blue);
+    padding: 8px;
+    border: none;
+    border-radius: 30px;
+    color: white;
+
+}
+.modal-hidden{
+    display: none;
+}
+#btnhide{
+display: none;
+}
