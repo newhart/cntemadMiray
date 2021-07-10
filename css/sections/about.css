@@ -6,11 +6,49 @@
     border: none;
     border-radius: 30px;
     color: white;
+    cursor: pointer;
 
+}
+.show:hover{
+    background-color: white;
+    color:var(--blue) ;
+    border: 1px solid var(--blue) ;
 }
 .modal-hidden{
     display: none;
+    background-color: white;
+    position: fixed;
+    top: 5%;
+    left: 5%;
+    right: 4%;
+    bottom: 2%;
+    z-index: 10;
+    border-radius: 8px;
+    overflow-y: scroll; 
+    box-shadow: 5px 12px 28px 2px rgba(0,0,0,0.46);
+    padding: 3px;
+    height: 90%;
 }
+
 #btnhide{
 display: none;
+}
+
+.closebtn{
+    font-size: 40px;
+    position: fixed;
+    top: 6%;
+    right: 7%;
+    cursor: pointer;
+}
+
+.overlay{
+    position: fixed;
+    z-index: 10;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    display: none;
+    background-color: rgba(0, 0, 0, 0.432);
 }

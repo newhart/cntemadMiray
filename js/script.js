@@ -15,18 +15,23 @@
 
 var modalhidden=document.getElementById('hidden');
 var btnshow=document.getElementById('btnshow');
-var btnhide=document.getElementById('btnhide');
+var closebtn=document.getElementsByClassName('closebtn')[0];
+var overlay=document.getElementById('overlay');
 function showMod(){
   modalhidden.style.display="block";
-  btnhide.style.display="block";
-  btnshow.style.display="none";
+  overlay.style.display="block";
   
  };
  function hideMod(){
   modalhidden.style.display="none";
-  btnshow.style.display="block";
-  btnhide.style.display="none";
-  
+  overlay.style.display="none";
  };
+
 btnshow.addEventListener("click", showMod);
-btnhide.addEventListener("click", hideMod);
+closebtn.addEventListener("click", hideMod);
+window.addEventListener("click",function(e){
+  if(e.target == overlay){
+    modalhidden.style.display = "none";
+    overlay.style.display="none";
+  }
+})
