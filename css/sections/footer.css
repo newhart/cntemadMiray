@@ -1,0 +1,15 @@
+.footer {
+    /* padding and sizing */
+    padding: 20px ;
+    margin:10px ;
+}
+.footer .fas{
+    /* color */
+    color: var(--blue);
+    /* margin */
+    margin: 10px;
+}
+.footer .fab{
+ color: white;
+ margin: 10px;
+}
