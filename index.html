@@ -46,7 +46,7 @@
 
       <!-- Mobile Menu Toggle Button -->
       <input type="checkbox" id="check">
-      <label for="check">
+      <label for="check" id="mobile-menu">
         <div class="burger">
           <span class="bar"></span>
           <span class="bar"></span>
@@ -55,7 +55,6 @@
       </label>
       <!-- end of mobile menu toggle button -->
 
-    
       <ul class="navbar-nav ml-auto">
         <li class="nav-item">
           <a class="nav-link page-scroll" href="#header"
@@ -90,6 +89,17 @@
         </span>
       </span>
     </nav>
+
+    /* burger animation */
+    <script>
+      const menu = document.querySelector('#mobile-menu');
+      const menuLinks = document.querySelector('.navbar-nav');
+      const menuMobile = () => {
+        menu.classList.toggle('is-active');
+        menuLinks.classList.toggle('active');
+      }
+      menu.addEventListener('click', menuMobile);
+    </script>
     <!-- end of navbar -->
     <!-- end of navigation -->
 
