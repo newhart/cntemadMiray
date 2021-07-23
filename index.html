@@ -19,11 +19,14 @@
       rel="stylesheet"
     />
     <!-- css generale  -->
+    <link rel="stylesheet" href="./css/sections/home.css" />
     <link rel="stylesheet" href="./css/sections/about.css" />
+    <link rel="stylesheet" href="./css/sections/home.css" />
     <link rel="stylesheet" href="./css/sections/activity.css" />
     <link rel="stylesheet" href="./css/sections/contact.css" />
     <link rel="stylesheet" href="./css/sections/footer.css" />
     <link rel="stylesheet" href="./css/sections/navigation.css" />
+    <link rel="stylesheet" href="./css/sections/team.css">
     <link rel="stylesheet" href="./css/fontawesome-all.css">
     <link href="css/styles.css" rel="stylesheet" />
     <link href="css/swiper.css" rel="stylesheet" />
@@ -37,76 +40,49 @@
     <script type="text/javascript" src="js/script.js" defer></script>
 
     <!-- Custom scripts -->
+
   </head>
   <body data-spy="scroll" data-target=".fixed-top">
     <!-- Preloader -->
-    <div class="spinner-wrapper">
-      <div class="spinner">
-        <div class="bounce1"></div>
-        <div class="bounce2"></div>
-        <div class="bounce3"></div>
-      </div>
-    </div>
     <!-- end of preloader -->
 
     <!-- Navigation (SAFIDY) -->
-    <nav class="navbar navbar-expand-lg navbar-dark navbar-custom fixed-top">
       <!-- Image Logo -->
       <a class="navbar-brand logo-image" href="index.html"
         ><img src="images/logo-cm-miray.jpeg" alt="alternative"
       /></a>
+     <div class="topnav" id="myTopnav">
+        <a href="#accueil" class="home">Accueil</a>
+        <a href="#activity" class="news">Activités</a>
+        <a href="#team" class="contact">Membres</a>
+        <a href="#about" class="about">A-propos</a>
+        <a href="#contact" class="contact">Contact</a>
+        <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+            <div class="container" onclick="myfunction(this)">
+                <div class="bar1"></div>
+                <div class="bar2"></div>
+                <div class="bar3"></div>
+            </div>
+        </a>
+    </div>
+        <script>
+        function myfunction(x) {
+            x.classList.toggle("change")
+        }
 
+        function myFunction() {
+            var x = document.getElementById("myTopnav");
+            if (x.className === "topnav") {
+                x.className += " responsive";
+            } else {
+                x.className = "topnav";
+            }
+        }
+    </script>
       <!-- Mobile Menu Toggle Button -->
-      <button
-        class="navbar-toggler"
-        type="button"
-        data-toggle="collapse"
-        data-target="#navbarsExampleDefault"
-        aria-controls="navbarsExampleDefault"
-        aria-expanded="false"
-        aria-label="Toggle navigation"
-      >
-        <span class="navbar-toggler-awesome fas fa-bars"></span>
-        <span class="navbar-toggler-awesome fas fa-times"></span>
-      </button>
       <!-- end of mobile menu toggle button -->
 
-      <div class="collapse navbar-collapse" id="navbarsExampleDefault">
-        <ul class="navbar-nav ml-auto">
-          <li class="nav-item">
-            <a class="nav-link page-scroll" href="#header"
-              >Acceuil<span class="sr-only">(current)</span></a
-            >
-          </li>
-          <li class="nav-item">
-            <a class="nav-link page-scroll" href="#activity">Activités</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link page-scroll" href="#team">Membres</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link page-scroll" href="#about">A-propos</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link page-scroll" href="#contact">Contact</a>
-          </li>
-        </ul>
-        <span class="nav-item social-icons">
-          <span class="fa-stack">
-            <a href="#your-link">
-              <i class="fas fa-circle fa-stack-2x facebook"></i>
-              <i class="fab fa-facebook-f fa-stack-1x"></i>
-            </a>
-          </span>
-          <span class="fa-stack">
-            <a href="#your-link">
-              <i class="fas fa-circle fa-stack-2x twitter"></i>
-              <i class="fab fa-twitter fa-stack-1x"></i>
-            </a>
-          </span>
-        </span>
-      </div>
-    </nav>
+
     <!-- end of navbar -->
     <!-- end of navigation -->
 
@@ -132,7 +108,7 @@
             <div class="col-lg-6">
               <div class="image-container">
                 <img
-                  class="img-fluid"
+                  class="img-fluid1"
                   src="images/header-teamwork.svg"
                   alt="alternative"
                 />
@@ -209,6 +185,22 @@
                   </p>
                   <p><span class="badge badge-primary">Club</span>:d'anglais</p>
                 </div>
+              <img
+                class="card-image"
+                src="images/services-icon-2.svg"
+                alt="alternative"
+              />
+              <div class="card-body">
+                <h4 class="card-title">
+                  Creation des clubs et sous-associations
+                </h4>
+                <p><span class="badge badge-primary">Equipe</span>:foot</p>
+                <p><span class="badge badge-primary">Club</span>:de danse</p>
+                <p><span class="badge badge-primary">Club</span>:d'echecs</p>
+                <p>
+                  <span class="badge badge-primary">Club</span>:d'informatique
+                </p>
+                <p><span class="badge badge-primary">Club</span>:d'anglais</p>
               </div>
             </div>
             <!-- end of card -->
@@ -255,12 +247,12 @@
 
     <!-- About cntemadMiray (MBOLA TSY MISY MANAO) -->
     <div class="slider-2" id="about">
-      <div class="container">
+      <div class="container" id="modalbg">
         <div class="row">
           <div class="col-lg-6">
             <div class="image-container">
               <img
-                class="img-fluid"
+                class="img-fluid1"
                 src="images/testimonials-2-men-talking.svg"
                 alt="alternative"
               />
@@ -272,17 +264,12 @@
             <h2>A-propos du CNTEMAD-MIRAY</h2>
 
             <!-- Card Slider -->
-            <div class="slider-container">
-              <div class="swiper-container card-slider">
-                <div class="swiper-wrapper">
+            <div class="about-container">
+              <div class="container card-slider">
+                <div class="wrapper" >
                   <!-- Slide -->
-                  <div class="swiper-slide">
+                  <div class="slide">
                     <div class="card">
-                      <img
-                        class="card-image"
-                        src="images/testimonial-1.svg"
-                        alt="alternative"
-                      />
                       <div class="card-body">
                         <p class="testimonial-text">
                           Constituer le mouvement unitaire représentatif des
@@ -293,11 +280,12 @@
                       </div>
                     </div>
                   </div>
-                  <!-- end of swiper-slide -->
-                  <!-- end of slide -->
-
-                  <!-- Slide -->
-                  <div class="swiper-slide">
+                  <button class="show" id="btnshow">Voir plus->></button>
+                  <!-- modal hidden -->
+                  <div class="overlay" id="overlay">
+                  <div class="modal-hidden" id="hidden">
+                  <span class="closebtn" id="closebtn">&times;</span>
+                  <div class="slide">
                     <div class="card">
                       <img
                         class="card-image"
@@ -315,11 +303,11 @@
                       </div>
                     </div>
                   </div>
-                  <!-- end of swiper-slide -->
+                  <!-- end of slide -->
                   <!-- end of slide -->
 
                   <!-- Slide -->
-                  <div class="swiper-slide">
+                  <div class="slide">
                     <div class="card">
                       <img
                         class="card-image"
@@ -337,17 +325,14 @@
                       </div>
                     </div>
                   </div>
-                  <!-- end of swiper-slide -->
+                  </div>
+                </div>
+                  <!-- end of slide -->
                   <!-- end of slide -->
                 </div>
-                <!-- end of swiper-wrapper -->
-
-                <!-- Add Arrows -->
-                <div class="swiper-button-next"></div>
-                <div class="swiper-button-prev"></div>
-                <!-- end of add arrows -->
+                <!-- end of wrapper -->
               </div>
-              <!-- end of swiper-container -->
+              <!-- end of container -->
             </div>
             <!-- end of slider-container -->
             <!-- end of card slider -->
@@ -362,9 +347,8 @@
     <!-- end of testimonials -->
 
     <!-- TEAM (CHRISTIANO ATAO SLIDE KOA ITO) -->
-    <div id="team" class="basic-4">
-      <div class="container">
-        <div class="row">
+    <div id="team" class="swiper-container team-card">
+       <div class="row">
           <div class="col-lg-12">
             <h2>A-propos du membres</h2>
             <p class="p-heading p-large">Les membres du bureaux</p>
@@ -372,10 +356,9 @@
           <!-- end of col -->
         </div>
         <!-- end of row -->
-        <div class="row">
-          <div class="col-lg-12">
+        <div class="swiper-wrapper">
             <!-- Team Member -->
-            <div class="team-member">
+            <div class="swiper-slide">
               <div class="image-wrapper">
                 <img
                   class="img-fluid"
@@ -406,7 +389,7 @@
             <!-- end of team member -->
 
             <!-- Team Member -->
-            <div class="team-member">
+            <div class="swiper-slide">
               <div class="image-wrapper">
                 <img
                   class="img-fluid"
@@ -437,7 +420,7 @@
             <!-- end of team member -->
 
             <!-- Team Member -->
-            <div class="team-member">
+            <div class="swiper-slide">
               <div class="image-wrapper">
                 <img
                   class="img-fluid"
@@ -468,7 +451,7 @@
             <!-- end of team member -->
 
             <!-- Team Member -->
-            <div class="team-member">
+            <div class="swiper-slide">
               <div class="image-wrapper">
                 <img
                   class="img-fluid"
@@ -499,7 +482,7 @@
             <!-- end of team member -->
 
             <!-- Team Member -->
-            <div class="team-member">
+            <div class="swiper-slide">
               <div class="image-wrapper">
                 <img
                   class="img-fluid"
@@ -532,7 +515,7 @@
             <!-- end of team member -->
 
             <!-- Team Member -->
-            <div class="team-member">
+            <div class="swiper-slide">
               <div class="image-wrapper">
                 <img
                   class="img-fluid"
@@ -563,7 +546,7 @@
             <!-- end of team member -->
 
             <!-- Team Member -->
-            <div class="team-member">
+            <div class="swiper-slide">
               <div class="image-wrapper">
                 <img
                   class="img-fluid"
@@ -594,7 +577,7 @@
             <!-- end of team member -->
 
             <!-- Team Member -->
-            <div class="team-member">
+            <div class="swiper-slide">
               <div class="image-wrapper">
                 <img
                   class="img-fluid"
@@ -627,7 +610,7 @@
             <!-- end of team member -->
 
             <!-- Team Member -->
-            <div class="team-member">
+            <div class="swiper-slide">
               <div class="image-wrapper">
                 <img
                   class="img-fluid"
@@ -660,7 +643,7 @@
             <!-- end of team member -->
 
             <!-- Team Member -->
-            <div class="team-member">
+            <div class="swiper-slide">
               <div class="image-wrapper">
                 <img
                   class="img-fluid"
@@ -691,14 +674,11 @@
             </div>
             <!-- end of team-member -->
             <!-- end of team member -->
-          </div>
-          <!-- end of col -->
-        </div>
-        <!-- end of row -->
       </div>
-      <!-- end of container -->
+      <div class="swiper-button-prev"></div>
+      <div class="swiper-button-next"></div>
     </div>
-    <!-- end of basic-4 -->
+    <!-- end of container -->
     <!-- end of about -->
 
     <!-- Contact (MBOLA TSY MISY MANAO) -->
@@ -746,27 +726,30 @@
                   type="text"
                   class="form-control-input"
                   id="cname"
+                  placeholder=" Nom "
                   required
                 />
-                <label class="label-control" for="cname">Nom</label>
+                <label class="label-control" for="cname"></label>
               </div>
               <div class="form-group">
                 <input
                   type="email"
                   class="form-control-input"
                   id="cemail"
+                  placeholder=" Email "
                   required
                 />
-                <label class="label-control" for="cemail">Email</label>
+                <label class="label-control" for="cemail"></label>
               </div>
               <div class="form-group">
                 <textarea
                   class="form-control-textarea"
                   id="cmessage"
+                  placeholder=" Votre message"
                   required
                 ></textarea>
                 <label class="label-control" for="cmessage"
-                  >Votre message</label
+                  ></label
                 >
               </div>
               <div class="form-group">
@@ -862,4 +845,9 @@
     <!-- end of copyright -->
     <!-- end of copyright -->
   </body>
+  <!-- script js -->
+  <script src="js/swiper.min.js"></script>
+  <!-- Swiper for image and text sliders -->
+  <script src="js/script.js"></script>
+  <!-- Custom scripts -->
 </html>
