@@ -5,7 +5,8 @@
 }
 
 .navbar{
-    background-color:rgb(89, 188, 245);
+	display: flex;
+    background-color: var(--blue);
     position: fixed;
     width: 100%;
 	height: 82px;
@@ -21,14 +22,14 @@
 	margin-left: 22px;
 }
 
-
-nav .navbar-nav{
-	background-color: rgb(89, 188, 245);
+.navbar-nav{
+	background-color: var(--blue);
 	position: fixed;
 	width: 100%;
 	text-align: center;
 	top: -100%;
-	transition: all 0.5s ease-in-out;
+	transition: all 0.3s ease-in-out;
+	z-index: 8;
 }
 
 .nav-item{
@@ -43,11 +44,12 @@ nav .navbar-nav{
 	color: #fff;
     text-decoration: none;
 	font-weight: bold;
+    transition: 0.3s ease;
 }
 
 nav a:hover{
-	color: rgb(255, 208, 0);
-    transition: 0.5s ease-in-out;
+	color: var(--yellow);
+    transition: 0.5s ease;
 }
 
 .burger{
@@ -59,14 +61,30 @@ nav a:hover{
 }
 
 .burger .bar {
-	width: 35px;
-	height: 6px;
+	width: 25px;
+	height: 3px;
 	margin: 3px auto;
 	background: #fff;
+	transition: all 0.3s ease-in-out;
 }
 
 .social-icons{
     display: none;
+}
+
+#mobile-menu.is-active .bar:nth-child(2){
+	opacity: 0;
+	transition: 0.3s
+}
+
+#mobile-menu.is-active .bar:nth-child(1){
+	transform: translateY(9px) rotate(45deg);
+	transition: 0.3s
+}
+
+#mobile-menu.is-active .bar:nth-child(3){
+	transform: translateY(-9px) rotate(-45deg);
+	transition: 0.3s
 }
 
 #check{
@@ -74,5 +92,23 @@ nav a:hover{
 }
 
 #check:checked ~ .navbar-nav{
-	top: auto;
+	top: 80px;
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
