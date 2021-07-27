@@ -31,6 +31,17 @@ var swiper = new Swiper('.swiper-container',{
     },
   });
 
+
+/* navbar animation */
+const menu = document.querySelector('#mobile-menu');
+const menuLinks = document.querySelector('.navbar-nav');
+const menuMobile = () => {
+  menu.classList.toggle('is-active');
+  menuLinks.classList.toggle('active');
+}
+menu.addEventListener('click', menuMobile);
+
+
 var modalhidden=document.getElementById('hidden');
 var btnshow=document.getElementById('btnshow');
 var closebtn=document.getElementsByClassName('closebtn')[0];
@@ -53,3 +64,4 @@ window.addEventListener("click",function(e){
     overlay.style.display="none";
   }
 })
+
