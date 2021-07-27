@@ -19,6 +19,7 @@
       rel="stylesheet"
     />
     <!-- css generale  -->
+    <link rel="stylesheet" href="./css/sections/home.css" />
     <link rel="stylesheet" href="./css/sections/about.css" />
     <link rel="stylesheet" href="./css/sections/home.css" />
     <link rel="stylesheet" href="./css/sections/activity.css" />
@@ -33,7 +34,13 @@
     <!-- Favicon  -->
     <link rel="icon" href="images/favicon.png" />
 
-    
+    <!-- script js -->
+    <script src="js/swiper.min.js"></script>
+    <!-- Swiper for image and text sliders -->
+    <script type="text/javascript" src="js/script.js" defer></script>
+
+    <!-- Custom scripts -->
+
   </head>
   <body data-spy="scroll" data-target=".fixed-top">
     <!-- Preloader -->
@@ -155,7 +162,7 @@
     <!-- end of header -->
     <!-- end of header -->
 
-    <!-- Activités (FANAINGO Ity imay misy  sloide) -->
+    <!-- Activités (FANAINGO Ity ilay misy  slide) -->
     <div id="activity" class="cards-1">
       <div class="container">
         <div class="row">
@@ -165,10 +172,10 @@
           <!-- end of col -->
         </div>
         <!-- end of row -->
-        <div class="row">
-          <div class="col-lg-12">
+        <div class="row swiper-container">
+          <div class=" col-lg-12 swiper-wrapper">
             <!-- Card -->
-            <div class="card">
+            <div class="card swiper-slide">
               <img
                 class="card-image"
                 src="images/services-icon-1.svg"
@@ -193,7 +200,7 @@
             <!-- end of card -->
 
             <!-- Card -->
-            <div class="card">
+            <div class="card swiper-slide">
               <img
                 class="card-image"
                 src="images/services-icon-2.svg"
@@ -215,7 +222,7 @@
             <!-- end of card -->
 
             <!-- Card -->
-            <div class="card">
+            <div class="card swiper-slide">
               <img
                 class="card-image"
                 src="images/services-icon-3.svg"
@@ -239,6 +246,10 @@
             <!-- end of card -->
           </div>
           <!-- end of col -->
+
+          <!-- add pagination -->
+          <div class="swiper-pagination"></div>
+
         </div>
         <!-- end of row -->
       </div>
@@ -247,9 +258,10 @@
     <!-- end of cards-1 -->
     <!-- end of services -->
 
+
     <!-- About cntemadMiray (MBOLA TSY MISY MANAO) -->
     <div class="slider-2" id="about">
-      <div class="container">
+      <div class="container" id="modalbg">
         <div class="row">
           <div class="col-lg-6">
             <div class="image-container">
@@ -266,17 +278,12 @@
             <h2>A-propos du CNTEMAD-MIRAY</h2>
 
             <!-- Card Slider -->
-            <div class="slider-container">
-              <div class="swiper-container card-slider">
-                <div class="swiper-wrapper">
+            <div class="about-container">
+              <div class="container card-slider">
+                <div class="wrapper" >
                   <!-- Slide -->
-                  <div class="swiper-slide">
+                  <div class="slide">
                     <div class="card">
-                      <img
-                        class="card-image"
-                        src="images/testimonial-1.svg"
-                        alt="alternative"
-                      />
                       <div class="card-body">
                         <p class="testimonial-text">
                           Constituer le mouvement unitaire représentatif des
@@ -287,11 +294,12 @@
                       </div>
                     </div>
                   </div>
-                  <!-- end of swiper-slide -->
-                  <!-- end of slide -->
-
-                  <!-- Slide -->
-                  <div class="swiper-slide">
+                  <button class="show" id="btnshow">Voir plus->></button>
+                  <!-- modal hidden -->
+                  <div class="overlay" id="overlay">
+                  <div class="modal-hidden" id="hidden">
+                  <span class="closebtn" id="closebtn">&times;</span>
+                  <div class="slide">
                     <div class="card">
                       <img
                         class="card-image"
@@ -309,11 +317,11 @@
                       </div>
                     </div>
                   </div>
-                  <!-- end of swiper-slide -->
+                  <!-- end of slide -->
                   <!-- end of slide -->
 
                   <!-- Slide -->
-                  <div class="swiper-slide">
+                  <div class="slide">
                     <div class="card">
                       <img
                         class="card-image"
@@ -331,17 +339,14 @@
                       </div>
                     </div>
                   </div>
-                  <!-- end of swiper-slide -->
+                  </div>
+                </div>
+                  <!-- end of slide -->
                   <!-- end of slide -->
                 </div>
-                <!-- end of swiper-wrapper -->
-
-                <!-- Add Arrows -->
-                <div class="swiper-button-next"></div>
-                <div class="swiper-button-prev"></div>
-                <!-- end of add arrows -->
+                <!-- end of wrapper -->
               </div>
-              <!-- end of swiper-container -->
+              <!-- end of container -->
             </div>
             <!-- end of slider-container -->
             <!-- end of card slider -->
@@ -735,27 +740,30 @@
                   type="text"
                   class="form-control-input"
                   id="cname"
+                  placeholder=" Nom "
                   required
                 />
-                <label class="label-control" for="cname">Nom</label>
+                <label class="label-control" for="cname"></label>
               </div>
               <div class="form-group">
                 <input
                   type="email"
                   class="form-control-input"
                   id="cemail"
+                  placeholder=" Email "
                   required
                 />
-                <label class="label-control" for="cemail">Email</label>
+                <label class="label-control" for="cemail"></label>
               </div>
               <div class="form-group">
                 <textarea
                   class="form-control-textarea"
                   id="cmessage"
+                  placeholder=" Votre message"
                   required
                 ></textarea>
                 <label class="label-control" for="cmessage"
-                  >Votre message</label
+                  ></label
                 >
               </div>
               <div class="form-group">
