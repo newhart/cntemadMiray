@@ -96,29 +96,6 @@
         </span>
       </span>
     </nav>
-
-    <!-- animation navbar script -->
-    <script>
-      /* burger animation */
-      const menu = document.querySelector('#mobile-menu');
-      const menuLinks = document.querySelector('.ml-auto');
-      const menuMobile = () => {
-        menu.classList.toggle('is-active');
-        menuLinks.classList.toggle('active');
-      }
-      menu.addEventListener('click', menuMobile);
-      /* close mobile menu */
-      const hideMobileMenu = () =>{
-        const menuBars = document.querySelector('.is-active');
-        if(menuBars){
-          menu.classList.toggle('is-active');
-          menuLinks.classList.remove('active');
-        }
-      }
-      menuLinks.addEventListener('click', hideMobileMenu);
-      
-      
-    </script>
     <!-- end of navbar -->
     <!-- end of navigation -->
 

@@ -1,7 +1,7 @@
 // initialize swiper pagination to the slide card on activity section
 console.log(document.querySelector('.swiper-container'))
 
-var swiper = new Swiper('.swiper-container',{
+var swiper = new Swiper('.activy',{
 	slidesPerView:2,
 	spaceBetween: 50,
 	centerSlides: true,
